@@ -1,3 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap');
+
+
+html {
+  --bg-color-200: hsl(214, 25%, 3%);
+  --bg-color-300: hsla(214, 25%, 11%, 0.75);
+  --bg-color-400: hsl(214, 20%, 16%);
+
+  --text-color: hsl(215, 25%, 90%);
+
+  --accent-color-200: hsl(24, 43%, 70%);
+  --accent-color-400: hsl(2, 86%, 56%);
+  --accent-color-500: hsl(0, 100%, 78%);
+
+  --txt-heading: "Outfit", sans-serif;
+  --txt-base: "Inter", sans-serif;
+}
+
 body {
-    background-color: rgb(77, 77, 77);
+  background-color: var(--bg-color-200);
+  color: var(--text-color);
+  font-family: var(--txt-base);
+  line-height: 1.5;
+}
+
+header,
+footer {
+  background-color: var(--bg-color-400);
+}
+
+h1,
+h2 {
+  color: var(--accent-color-200);
+  font-family: var(--txt-heading);
+} 
+
+header h1 {
+  color: var(--accent-color-400);
+}
+
+footer h1 {
+  font-size: 1.5rem;
 }
